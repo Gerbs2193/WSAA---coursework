@@ -1,4 +1,4 @@
-# Needed for msking http request to api
+# Needed for making http request to api
 import requests
 
 # current weather data from api
@@ -9,10 +9,8 @@ def get_current_weather():
     response = requests.get(url)
     data = response.json()
     temperature = data['current']['temperature_2m']
-    wind_speed = data['current']['wind_speed_10m']
-    return temperature, wind_speed
+    return temperature
 
 if __name__ == "__main__":
-    temperature, wind_speed = get_current_weather()
+    temperature = get_current_weather()
     print(f"Current Temperature: {temperature}°C")
-    print(f"Current Wind Speed: {wind_speed} km/h")
