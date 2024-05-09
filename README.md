@@ -100,3 +100,103 @@ Like before, ensure all dependancies are installed like python and the requests 
 
 **Step 2**
 import pandas and JSON libraries. Define the CSO URL (which after an exhaustive effort, was actually found by just typing into google: 'exchequer account historical series cso JSON)' rather than going to the CSO and manually attempting to find it, as I did initially. Use Pandas to then read the data from them URL and then convert it to JSON. Lastly in keeping to the brief, write the JSON to a file called cso.json. 
+
+**How to run**
+
+As before, open Github and visit my repository at https://github.com/Gerbs2193/WSAA---coursework and Simply folllow the same steps as with the first task until you have gotten to running th script. Then, simply type in python assignment03-cso.py in the terminal and away you go. 
+
+**Final Code**
+
+```
+import pandas as pd
+
+import json
+
+url = "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/FIQ02/JSON-stat/1.0/en"
+
+df = pd.read_json(url)
+
+data = df.to_json()
+
+with open("cso.json", "w") as f:
+    f.write(data)
+```````
+
+
+
+
+
+
+
+
+
+## Task3-assignment04-github.py
+**The brief:**
+
+>Write a program in python that will read a file from a repository, 
+The program should then replace all the instances of the text "Andrew" with your name. 
+The program should then commit those changes and push the file back to the repository (You will need authorisation to do this).
+I do not need to see your keys (see lab2, to follow 
+
+**What to do?**
+
+From my understanding, write a txt file in, say, VScode. In it, write the word Andrew a number of times. Push it to the repository that is being used for the above tasks aka WSAA---coursework. Then you write the program that will read in this txt file to ultimately change the word Andrew with your name, also known in many circles as Ger, for me. 
+
+**Step 1**
+
+Ensure all dependancies are installed like git module to which we import the class repo as needed to interact with our git repository. Import OS and Shutil for navigating directories and utility. 
+
+**Step 2**
+Code it. Start with the pertinent information of the repository like its URL, the file path of the txt file and your name to replace the Andrew instances. Clone the repo. Read and modify the txt file as per the brief. Write the new file and commit it to Github. 
+
+**Step3**
+
+Authentication is required given that the brief tasks us with pushing commits. To do this, I created an SSH key and agent and opened it up in Github. To do this, type ssh-keygen -t rsa -b 4096 -C your_email@example.com in the terminal. On mac, type eval "$(ssh-agent -s) to set up the agent or ssh-add ~/.ssh/id_rsa on Windows. Add it on Github by navigating the settings and pasting the SSH key into the necessary field section. This caused me some grief as i kept getting erorrs relating to mt ssh. Got it in the end. 
+
+
+
+**How to run**
+Same steps as before but the script it called assignment04-github.py. Given it's authentication requirement, input gerbs when asked to do so and the program will carry out. 
+
+
+**Conpleted code**
+
+```
+from git import Repo 
+import os
+import shutil
+
+REPO_URL = 'git@github.com:Gerbs2193/WSAA---coursework.git'
+FILE_PATH = 'Assignments/Andrew.txt'
+YOUR_NAME = 'Ger'
+
+if os.path.exists('/tmp/repo'):
+    shutil.rmtree('/tmp/repo')
+
+repo = Repo.clone_from(REPO_URL, '/tmp/repo')
+
+with open(os.path.join('/tmp/repo', FILE_PATH), 'r') as file:
+    filedata = file.read()
+
+filedata = filedata.replace('Andrew', YOUR_NAME)
+
+with open(os.path.join('/tmp/repo', FILE_PATH), 'w') as file:
+    file.write(filedata)
+
+try:
+    repo.git.add(FILE_PATH)
+    repo.git.commit('-m', 'Replace Andrew with ger')
+    repo.git.push()
+    print("Changes pushed successfully!")
+except Exception as e:
+    print(f'An error has occurred: {e}')
+
+repo.close()
+shutil.rmtree('/tmp/repo')
+```
+
+## Resources and Commentary
+
+**currentweather.py**
+
+https://open-meteo.com/ - Used to refresh on how to make requests and the like. 
