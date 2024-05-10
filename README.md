@@ -50,7 +50,7 @@ Going by my own attempt; define two functions that each independently fetch weat
 
  4. Open a terminal or in my case, vscode
 
- 5. navigate to the script's directory, then simply run it using python currentweather.py. 
+ 5. Navigate to the script's directory, then simply run it using python currentweather.py. 
 
  **Final Code**
 
@@ -167,7 +167,7 @@ Authentication is required given that the brief tasks us with pushing commits. T
 Same steps as before but the script it called assignment04-github.py. Given it's authentication requirement, input ***** when asked to do so and the program will carry out. 
 
 
-**Conpleted code**
+**Completed code**
 
 ```
 from git import Repo 
