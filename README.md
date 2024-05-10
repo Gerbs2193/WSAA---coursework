@@ -1,4 +1,4 @@
-# WSAA---coursework
+# WSAA---coursework - Gerard Ball
 
 ## Table of Contents
 - [What-is-it](#what-is-it)
@@ -34,7 +34,7 @@ Look at the documentation (below) and print out the current wind direction (10m)
 Using both urls, you are to create a program that will print the current weather from one and the current wind direction from the other. 
 
 **Step 1**
-Ensure you have all python and the requests library installed on your computer. Both will be needed for this task.
+Ensure you have python and the requests library installed on your computer. Both will be needed for this task.
 
 **Step 2**
 Going by my own attempt; define two functions that each independently fetch weather data from two separate API's. The main function was used to ensure this script runs properly
@@ -50,7 +50,7 @@ Going by my own attempt; define two functions that each independently fetch weat
 
  4. Open a terminal or in my case, vscode
 
- 5. navigate to the script's directory, then simply run it using python current_weather.py. 
+ 5. navigate to the script's directory, then simply run it using python currentweather.py. 
 
  **Final Code**
 
@@ -96,7 +96,7 @@ Save this assignment as "assignment03-cso.py"
 This program should not be a long one
 I don't need you to reformat or analyse the data in any way
 It should be about 10ish lines long (I have not counted)
-You will need to find the dataset in CSO.ie, try economic and then finance, then finance indicators. yes it is difficult to find, that is part of the task, actually the easiest way to find it is search for it.>
+You will need to find the dataset in CSO.ie, try economic and then finance, then finance indicators. yes it is difficult to find, that is part of the task, actually the easiest way to find it is search for it.
 
 **What is being asked here?**
 
@@ -111,7 +111,7 @@ import pandas and JSON libraries. Define the CSO URL (which after an exhaustive 
 
 **How to run**
 
-As before, open Github and visit my repository at https://github.com/Gerbs2193/WSAA---coursework and Simply folllow the same steps as with the first task until you have gotten to running th script. Then, simply type in python assignment03-cso.py in the terminal and away you go. 
+As before, open Github and visit my repository at https://github.com/Gerbs2193/WSAA---coursework and Simply folllow the same steps as with the first task until you have gotten to running the script. Then, simply type in python assignment03-cso.py in the terminal and away you go. 
 
 **Final Code**
 
@@ -159,12 +159,12 @@ Code it. Start with the pertinent information of the repository like its URL, th
 
 **Step3**
 
-Authentication is required given that the brief tasks us with pushing commits. To do this, I created an SSH key and agent and opened it up in Github. To do this, type ssh-keygen -t rsa -b 4096 -C your_email@example.com in the terminal. On mac, type eval "$(ssh-agent -s) to set up the agent or ssh-add ~/.ssh/id_rsa on Windows. Add it on Github by navigating the settings and pasting the SSH key into the necessary field section. This caused me some grief as i kept getting erorrs relating to mt ssh. Got it in the end. 
+Authentication is required given that the brief tasks us with pushing commits. To do this, I created an SSH key and agent and opened it up in Github. To do this, type ssh-keygen -t rsa -b 4096 -C your_email@example.com in the terminal. On mac, type eval "$(ssh-agent -s) to set up the agent or ssh-add ~/.ssh/id_rsa on Windows. Add it on Github by navigating the settings and pasting the SSH key into the necessary field section. This caused me some grief as i kept getting erorrs relating to my ssh. Got it in the end. 
 
 
 
 **How to run**
-Same steps as before but the script it called assignment04-github.py. Given it's authentication requirement, input gerbs when asked to do so and the program will carry out. 
+Same steps as before but the script it called assignment04-github.py. Given it's authentication requirement, input ***** when asked to do so and the program will carry out. 
 
 
 **Conpleted code**
@@ -221,7 +221,7 @@ I didnt know how to get the wind direction as that data wasn't available from th
 
 - https://stackoverflow.com/questions/34493531/how-to-store-and-retrieve-json-data-into-local-storage - Answered the brief and showed how to do it. 
 
-**assignment04-github.py
+**assignment04-github.py**
 
 - https://stackoverflow.com/questions/71750303/how-to-link-ssh-key-to-ssh-agent-and-push-files-to-github-account - Helped with authentication help and file path coding
 
