@@ -1,5 +1,13 @@
 # WSAA---coursework
 
+## Table of Contents
+- [What-is-it](#what-is-it)
+- [Task1-currentweather.py](#task1-currentweatherpy)
+- [Task2-assignment03-cso.py](#task2-assignment03-csopy)
+- [Task3-assignment04-github.py](#task3-assignment04-githubpy)
+- [Resources and Commentary](#resources-and-commentary)
+- [Bibliography](#bibliography)
+
 ## What is it
 
 This README concentrates on the steps needed to run, research and ultimately understand the three assignments set by professor Andrew Beatty as part of ATU's Web Services and Applications module. 
@@ -199,4 +207,52 @@ shutil.rmtree('/tmp/repo')
 
 **currentweather.py**
 
-https://open-meteo.com/ - Used to refresh on how to make requests and the like. 
+- https://open-meteo.com/ - Used to refresh on how to make requests and the like. 
+
+- https://docs.python.org/3/library/json.html - Huge resourse that had most all that I needed. 
+
+- https://stackoverflow.com/questions/70408634/openweather-api-get-current-temp-with-discord-py - Used to see requests of api in action
+
+**Issues**
+
+I didnt know how to get the wind direction as that data wasn't available from the first api provided. I somehow missed the second one. 
+
+**assignment03-cso.py**
+
+- https://stackoverflow.com/questions/34493531/how-to-store-and-retrieve-json-data-into-local-storage - Answered the brief and showed how to do it. 
+
+**assignment04-github.py
+
+- https://stackoverflow.com/questions/71750303/how-to-link-ssh-key-to-ssh-agent-and-push-files-to-github-account - Helped with authentication help and file path coding
+
+- https://github.com/github/docs/blob/main/content/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent.md - Thorough walkthrough of steps
+
+- https://stackoverflow.com/questions/63001496/how-to-export-multiple-temp-sql-tables-into-multiple-excel-tabs - code example similiar to my own. 
+
+- https://stackoverflow.com/questions/67706647/how-to-add-commit-and-push-a-repository-via-git-python - Helped with cloning
+
+- https://gitpython.readthedocs.io/en/stable/ - Used to know how to interact with the repo, cloning and commiting the changes. 
+
+**Issues** 
+
+Creating the SSH pair wouldn't work and for the longest time in the terminal app on my mac and i still am unsure why. Eventually, I did it via the vscode terminal and it worked somehow. 
+
+## Bibliography
+
+ - Open. Available at: https://open-meteo.com/ (Accessed: 10 May 2024). 
+
+ - JSON - JSON encoder and decoder (no date) Python documentation. Available at: https://docs.python.org/3/library/json.html (Accessed: 10 May 2024). 
+
+ - Stackoverflow OpenWeather API get current temp. with discord.py, Stack Overflow. Available at: https://stackoverflow.com/questions/70408634/openweather-api-get-current-temp-with-discord-py (Accessed: 10 May 2024). 
+
+ - Stackoverflow. How to store and retrieve JSON data into local storage?, Stack Overflow. Available at: https://stackoverflow.com/questions/34493531/how-to-store-and-retrieve-json-data-into-local-storage (Accessed: 10 May 2024). 
+
+ - Stackoverflow. How to link SSH key to SSH agent and push files to github account, Stack Overflow. Available at: https://stackoverflow.com/questions/71750303/how-to-link-ssh-key-to-ssh-agent-and-push-files-to-github-account (Accessed: 10 May 2024). 
+
+ - Github, Docs/content/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent.MD at main · github/docs, GitHub. Available at: https://github.com/github/docs/blob/main/content/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent.md (Accessed: 10 May 2024). 
+
+ - Stackoverflow.  Export SQL query to excel with multiple worksheets and custom headers, Stack Overflow. Available at: https://stackoverflow.com/questions/28685906/export-sql-query-to-excel-with-multiple-worksheets-and-custom-headers (Accessed: 10 May 2024). 
+
+ - Stackoverflow. How to add/commit and push a repository via Git-Python?, Stack Overflow. Available at: https://stackoverflow.com/questions/67706647/how-to-add-commit-and-push-a-repository-via-git-python (Accessed: 10 May 2024). 
+
+ - GitPython documentation (no date) GitPython Documentation - GitPython 3.1.43 documentation. Available at: https://gitpython.readthedocs.io/en/stable/ (Accessed: 10 May 2024). 
